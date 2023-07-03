@@ -5,7 +5,6 @@ import Phones from "./Phones";
 import Footer from "./Footer";
 import PhoneDetails from "./PhoneDetails";
 import { Route, Routes } from "react-router-dom";
-import FirsrAndLastName from "./FirsrAndLastName";
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route path="/Products" exact Component={Categories} />
         <Route path="/Phones" exact Component={Phones} />
         <Route path="/PhoneDetails/:id" exact Component={PhoneDetails} />
-        <Route path="/FirsrAndLastName" exact Component={FirsrAndLastName} />
       </Routes>
 
       <Footer />

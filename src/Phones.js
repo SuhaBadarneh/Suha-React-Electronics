@@ -98,19 +98,19 @@ function Phones() {
 }
 export default Phones;
 
-function Phone(props) {
+function Phone({ phoneObj }) {
   return (
     <Col className="text-center lg-4 md-6 sm-12 d-flex justify-content-center align-items-center">
       <Card style={{ width: "18rem" }} className="phone-card p-2 ">
-        <Card.Img variant="top" src={props.phoneObj.image} />
+        <Card.Img variant="top" src={phoneObj.image} />
         <Card.Body>
-          <Card.Title>{props.phoneObj.name}</Card.Title>
-          <Card.Text>{props.phoneObj.description}</Card.Text>
+          <Card.Title>{phoneObj.name}</Card.Title>
+          <Card.Text>{phoneObj.description}</Card.Text>
           <Button
-            id={props.phoneObj.id}
+            id={phoneObj.id}
             variant="dark"
             className=" p-2 w-50 addToCart-Button"
-            href={`/phoneDetails/${props.phoneObj.id}`}
+            href={`/phoneDetails/${phoneObj.id}`}
           >
             Show Details
           </Button>
