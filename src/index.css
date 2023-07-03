@@ -1,0 +1,148 @@
+
+/*Homepage Component Start*/
+.homepage{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.homepage img{
+    height: 40rem;
+    filter: blur(2px);
+}
+.homepage-caption{
+    position: absolute;
+    top: 40%;
+}
+.homepage-caption h3{
+    font-size: 3rem;
+}
+/*Homepage Component end*/
+
+
+/*header Component Start*/
+
+.header-nav
+{
+    width: 100%;
+   
+    color: #000;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: #1f1010;
+  
+    
+    
+}
+.logo{
+    position: relative;
+}
+.logo::after{
+    content: ""; 
+    position: absolute; 
+    right: -0.9rem;
+    top: 0.7rem;
+    width: 2px;
+    height: 2.5rem;
+    background-color:chocolate;
+
+}
+.nav-link{
+    color: #000;
+}
+
+/*header Component end*/
+/*Categories Component Start*/
+.category-container{
+  margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 100vh; 
+
+}
+.category-col{
+   text-decoration: none;
+   color:#000;
+cursor: pointer;
+}
+.category:hover{
+    box-shadow: 0px 0px 52px 5px rgba(101,98,98,0.67);
+    transition:.5s;
+}
+
+/*Categories Component end*/
+
+
+/*Phones Component Start*/
+.product-card{
+    line-height: 2.5rem;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .card-body{
+    display: flex;
+    flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  }
+
+  .phones-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .phones-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .phone-card{
+    cursor: pointer;
+   
+  }
+  .phone-card:hover{
+    box-shadow: 0px 0px 52px 5px rgba(101,98,98,0.67);
+    transition:.5s;
+}
+.phone-details{
+  min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+/*Phones Component end*/
+
+.info-details{
+  min-height:100vh;
+  margin-top: 5rem;
+ 
+  
+  
+}
+
+/*Footer Component Start*/
+
+.footer{
+    color: white;
+    width: 100%;
+   padding: 2rem;
+    background-color: #000;
+  }
+  .footer-useful-links{
+    list-style:none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  /*Footer Component end*/
